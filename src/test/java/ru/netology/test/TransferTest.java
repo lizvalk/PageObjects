@@ -66,6 +66,6 @@ public class TransferTest {
         var expectedBalanceSecondCard = secondCardBalance - amount;
         var transferPage = dashboardPage.selectFirstCardToTransfer();
         dashboardPage = transferPage.successfulMoneyTransfer(String.valueOf(amount), invalidCard);
-        transferPage.ErrorMessage("Ошибка! Произошла ошибка");
+        transferPage.errorMessage("Ошибка! Произошла ошибка");
     }
 }

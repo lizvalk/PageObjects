@@ -28,8 +28,7 @@ public class TransferPage {
         transferMoney(amount, cardInfo);
         return new DashboardPage();
     }
-    public void ErrorMessage(String text) {
+    public void errorMessage(String text) {
         errorMessage.shouldBe(Condition.exactText(text), Duration.ofSeconds(15)).shouldBe(Condition.visible);
     }
 }
-
